@@ -223,7 +223,7 @@ function App() {
                     AI Video Editing Tool
                   </h3>
                   <a
-                    href="https://github.com/"
+                    href="https://github.com/Adarsh180507/VideoEditingAiAgent.git"
                     target="_blank"
                     rel="noreferrer"
                     className="text-slate-400 hover:text-slate-900 p-1 rounded-lg hover:bg-slate-50 transition-all"
@@ -269,7 +269,7 @@ function App() {
                     Course Subscription Backend
                   </h3>
                   <a
-                    href="https://github.com/"
+                    href="https://github.com/Adarsh180507/CourseSubscriptionWebApp.git"
                     target="_blank"
                     rel="noreferrer"
                     className="text-slate-400 hover:text-slate-900 p-1 rounded-lg hover:bg-slate-50 transition-all"
@@ -433,7 +433,7 @@ function App() {
             <input
               type="hidden"
               name="access_key"
-              value="YOUR_ACCESS_KEY_HERE"
+              value="dfee98da-71d1-4077-8c73-14d79a00dac7"
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -507,7 +507,7 @@ function App() {
           </p>
           <div className="flex gap-6 font-semibold text-slate-400">
             <a
-              href="https://github.com/"
+              href="https://github.com/Adarsh180507"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition-colors"
