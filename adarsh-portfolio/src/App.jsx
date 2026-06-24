@@ -33,7 +33,7 @@ function App() {
       <section className="pt-44 pb-28 px-6 max-w-5xl mx-auto flex flex-col items-center text-center">
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 bg-blue-50/60 border border-blue-100 text-blue-700 font-semibold text-xs tracking-wide uppercase rounded-full">
           <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-          8.70 CGPA • IIT (BHU) Varanasi
+          8.51 CGPA • IIT (BHU) Varanasi
         </div>
 
         <h1 className="text-5xl md:text-7xl font-black mb-8 tracking-tight text-slate-900 max-w-4xl leading-[1.15]">
@@ -46,7 +46,7 @@ function App() {
           optimized algorithmic problem solving.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <a
             href="#projects"
             className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 shadow-md hover:shadow-lg hover:shadow-blue-100 transition-all text-center"
@@ -54,12 +54,20 @@ function App() {
             Explore Projects
           </a>
           <a
+            href="https://leetcode.com/u/PROAdarsh1/"
+            target="_blank"
+            rel="noreferrer"
+            className="w-full sm:w-auto bg-[#FFA116]/10 text-[#FFA116] border border-[#FFA116]/30 px-8 py-4 rounded-xl font-bold hover:bg-[#FFA116]/20 transition-all text-center flex items-center justify-center gap-2"
+          >
+            LeetCode Knight
+          </a>
+          <a
             href="https://codeforces.com/profile/Adarsh1805"
             target="_blank"
             rel="noreferrer"
             className="w-full sm:w-auto bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:border-slate-900 hover:text-slate-900 transition-all text-center"
           >
-            Codeforces Profile
+            Codeforces
           </a>
         </div>
       </section>
@@ -179,14 +187,27 @@ function App() {
                 Problem Solving
               </h3>
               <ul className="space-y-3 text-slate-600 font-medium text-sm">
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span>
-                  Codeforces Handle:{" "}
-                  <span className="font-bold text-blue-600">Adarsh1805</span>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-1.5 shrink-0"></span>
+                  <div>
+                    LeetCode:{" "}
+                    <span className="font-bold text-[#FFA116]">PROAdarsh1</span>
+                    <br />
+                    <span className="text-xs text-slate-500">
+                      Rating: 1945 (Knight Badge)
+                    </span>
+                  </div>
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span>
-                  Peak Rating: 1436
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-1.5 shrink-0"></span>
+                  <div>
+                    Codeforces:{" "}
+                    <span className="font-bold text-blue-600">Adarsh1805</span>
+                    <br />
+                    <span className="text-xs text-slate-500">
+                      Max Rating: 1436
+                    </span>
+                  </div>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span>
@@ -222,11 +243,12 @@ function App() {
                   <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
                     AI Video Editing Tool
                   </h3>
+                  {}
                   <a
                     href="https://github.com/Adarsh180507/VideoEditingAiAgent.git"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-slate-400 hover:text-slate-900 p-1 rounded-lg hover:bg-slate-50 transition-all"
+                    className="text-slate-400 hover:text-slate-900 p-1 rounded-lg hover:bg-slate-50 transition-all cursor-pointer z-10 relative"
                     title="View Repository"
                   >
                     <svg
@@ -237,12 +259,12 @@ function App() {
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
-                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.867 8.17 6.839 9.49.5.092.682-.217.682-.48 text-shadow-smv-.1.017-1.665.025-3.266-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.01.069-.01 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.867 8.17 6.839 9.49.5.092.682-.217.682-.48v-.1.017-1.665.025-3.266-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.01.069-.01 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
                       />
                     </svg>
                   </a>
                 </div>
-                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                <p className="text-slate-600 mb-6 text-sm leading-relaxed relative z-0">
                   An intelligent desktop application designed to automate
                   micro-video editing configurations and asset processing using
                   deep learning frameworks.
@@ -268,11 +290,12 @@ function App() {
                   <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
                     Course Subscription Backend
                   </h3>
+                  {}
                   <a
                     href="https://github.com/Adarsh180507/CourseSubscriptionWebApp.git"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-slate-400 hover:text-slate-900 p-1 rounded-lg hover:bg-slate-50 transition-all"
+                    className="text-slate-400 hover:text-slate-900 p-1 rounded-lg hover:bg-slate-50 transition-all cursor-pointer z-10 relative"
                     title="View Repository"
                   >
                     <svg
@@ -288,7 +311,7 @@ function App() {
                     </svg>
                   </a>
                 </div>
-                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                <p className="text-slate-600 mb-6 text-sm leading-relaxed relative z-0">
                   A comprehensive REST API application featuring secure user
                   routing, authentication structures, transaction mock-ups, and
                   programmatic access control.
@@ -507,7 +530,7 @@ function App() {
           </p>
           <div className="flex gap-6 font-semibold text-slate-400">
             <a
-              href="https://github.com/Adarsh180507"
+              href="https://github.com/your-github-username"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition-colors"
@@ -515,10 +538,18 @@ function App() {
               GitHub
             </a>
             <a
-              href="https://codeforces.com/"
+              href="https://leetcode.com/u/PROAdarsh1/"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-white transition-colors"
+              className="hover:text-[#FFA116] transition-colors"
+            >
+              LeetCode
+            </a>
+            <a
+              href="https://codeforces.com/profile/Adarsh1805"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-blue-500 transition-colors"
             >
               Codeforces
             </a>
