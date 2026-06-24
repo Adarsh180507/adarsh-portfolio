@@ -205,7 +205,7 @@ function App() {
                     <span className="font-bold text-blue-600">Adarsh1805</span>
                     <br />
                     <span className="text-xs text-slate-500">
-                      Max Rating: 1436
+                      Max Rating: 1540
                     </span>
                   </div>
                 </li>
@@ -530,7 +530,7 @@ function App() {
           </p>
           <div className="flex gap-6 font-semibold text-slate-400">
             <a
-              href="https://github.com/your-github-username"
+              href="https://github.com/Adarsh180507"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition-colors"
