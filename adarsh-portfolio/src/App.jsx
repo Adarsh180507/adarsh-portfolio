@@ -60,9 +60,11 @@ function App() {
         </h1>
 
         <p className="text-xl text-slate-600 mb-12 max-w-3xl leading-relaxed font-medium">
-          Mechanical Engineering student & Software Developer specializing in
-          robust backend architectures, AI-driven automation, and highly
-          optimized algorithmic problem solving.
+          Undergraduate student at IIT (BHU) Varanasi and aspiring Software
+          Engineer specializing in scalable backend architectures, AI-driven
+          automation, and high-performance algorithmic problem solving. Adept at
+          building robust APIs, intelligent data pipelines, and responsive
+          full-stack applications.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
@@ -186,7 +188,7 @@ function App() {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
-                  Mechanical Kinematics
+                  System Design & APIs
                 </li>
               </ul>
             </div>
