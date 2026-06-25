@@ -2,17 +2,21 @@ import React from "react";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-900 relative overflow-hidden">
-      {/* --- Ambient Background Glows --- */}
+    <div className="min-h-screen bg-[#fafcff] text-slate-900 font-sans antialiased selection:bg-blue-200 selection:text-blue-900 relative overflow-hidden">
+      {/* --- Dynamic Engineering Background --- */}
+      <div className="fixed inset-0 z-[-2] h-full w-full bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       <div className="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-        <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-blue-400/20 blur-[120px]"></div>
-        <div className="absolute top-[20%] -right-[10%] w-[30%] h-[50%] rounded-full bg-purple-400/15 blur-[120px]"></div>
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-[120px] animate-pulse duration-1000"></div>
+        <div
+          className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 blur-[120px] animate-pulse"
+          style={{ animationDelay: "2s" }}
+        ></div>
       </div>
 
       {/* Navigation Bar (Floating Pill Design) */}
       <div className="fixed top-0 w-full z-50 flex justify-center pt-6 px-4 pointer-events-none">
-        <nav className="bg-white/80 backdrop-blur-xl border border-slate-200/60 shadow-sm shadow-slate-200/50 py-3 px-6 rounded-full w-full max-w-5xl flex justify-between items-center pointer-events-auto transition-all">
-          {/* Upgraded Logo */}
+        <nav className="bg-white/90 backdrop-blur-xl border border-slate-200/80 shadow-sm shadow-slate-200/50 py-3 px-6 rounded-full w-full max-w-5xl flex justify-between items-center pointer-events-auto transition-all">
+          {/* Logo */}
           <div
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => window.scrollTo(0, 0)}
@@ -20,8 +24,8 @@ function App() {
             <span className="bg-slate-900 text-white text-[10px] font-mono px-2 py-1 rounded-md hidden sm:block">
               &lt;/&gt;
             </span>
-            <div className="font-black text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600">
-              Adarsh Kumar Vijayvargiya<span className="text-blue-600">.</span>
+            <div className="font-black text-xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700">
+              Adarsh<span className="text-blue-600">.</span>
             </div>
           </div>
 
@@ -37,7 +41,7 @@ function App() {
             </a>
             <a
               href="#contact"
-              className="bg-slate-900 text-white px-5 py-2.5 rounded-full hover:bg-blue-600 transition-all shadow-sm"
+              className="bg-slate-900 text-white px-5 py-2.5 rounded-full hover:bg-blue-600 transition-all shadow-sm hover:shadow-md"
             >
               Contact Me
             </a>
@@ -49,17 +53,19 @@ function App() {
       <section className="relative pt-48 pb-28 px-6 max-w-5xl mx-auto flex flex-col items-center text-center">
         <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 bg-white border border-slate-200 text-slate-700 font-bold text-xs tracking-wide uppercase rounded-full shadow-sm">
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-          8.51 CGPA • IIT (BHU) Varanasi
+          8.70 CGPA • IIT (BHU) Varanasi
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-black mb-8 tracking-tight text-slate-900 max-w-4xl leading-[1.15]">
-          Engineering scalable software <br className="hidden md:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-            & intelligent systems.
-          </span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 tracking-tight text-slate-900 max-w-4xl leading-[1.1]">
+          Hi, I'm <br className="md:hidden" />
+          Adarsh Kumar Vijayvargiya.
         </h1>
 
-        <p className="text-xl text-slate-600 mb-12 max-w-3xl leading-relaxed font-medium">
+        <h2 className="text-2xl md:text-4xl font-extrabold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+          Engineering scalable software.
+        </h2>
+
+        <p className="text-lg md:text-xl text-slate-600 mb-12 max-w-3xl leading-relaxed font-medium bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-slate-100/50">
           Undergraduate student at IIT (BHU) Varanasi and aspiring Software
           Engineer specializing in scalable backend architectures, AI-driven
           automation, and high-performance algorithmic problem solving. Adept at
@@ -70,7 +76,7 @@ function App() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <a
             href="#projects"
-            className="w-full sm:w-auto bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-600 shadow-lg hover:shadow-blue-500/30 transition-all text-center"
+            className="w-full sm:w-auto bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-600 shadow-lg hover:shadow-blue-500/30 transition-all text-center border border-transparent"
           >
             Explore Projects
           </a>
@@ -78,7 +84,7 @@ function App() {
             href="https://leetcode.com/u/PROAdarsh1/"
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto bg-white text-[#FFA116] border border-[#FFA116]/30 px-8 py-4 rounded-xl font-bold hover:bg-[#FFA116]/10 shadow-sm transition-all text-center flex items-center justify-center gap-2"
+            className="w-full sm:w-auto bg-white text-[#FFA116] border border-slate-200 hover:border-[#FFA116] px-8 py-4 rounded-xl font-bold hover:bg-[#FFA116]/5 shadow-sm transition-all text-center flex items-center justify-center gap-2"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
               <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.939 5.939 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114l5.313-5.693a.524.524 0 0 1 .734-.073l5.27 4.28a.514.514 0 0 1 .035.782l-5.32 5.305a1.375 1.375 0 0 0 1.94 1.95l5.32-5.306a3.266 3.266 0 0 0-.09-4.735L17.06 1.363A3.263 3.263 0 0 0 14.943.2l-1.46-.2z"></path>
@@ -97,11 +103,8 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section
-        id="skills"
-        className="py-28 bg-white/50 backdrop-blur-sm border-y border-slate-200/50"
-      >
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="skills" className="py-28 relative">
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 tracking-tight">
               Technical Arsenal
@@ -114,8 +117,8 @@ function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Skill Card 1 */}
-            <div className="p-8 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 border border-blue-200/50">
+            <div className="p-8 bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-3xl shadow-lg shadow-slate-200/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-500/20">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -154,8 +157,8 @@ function App() {
             </div>
 
             {/* Skill Card 2 */}
-            <div className="p-8 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 border border-blue-200/50">
+            <div className="p-8 bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-3xl shadow-lg shadow-slate-200/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-500/20">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -194,8 +197,8 @@ function App() {
             </div>
 
             {/* Skill Card 3 */}
-            <div className="p-8 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 border border-blue-200/50">
+            <div className="p-8 bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-3xl shadow-lg shadow-slate-200/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-500/20">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -232,7 +235,7 @@ function App() {
                     <span className="font-bold text-blue-600">Adarsh1805</span>
                     <br />
                     <span className="text-sm text-slate-500">
-                      Max Rating: 1540
+                      Max Rating: 1436
                     </span>
                   </div>
                 </li>
@@ -261,7 +264,7 @@ function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1: AI Video Editor SaaS */}
-            <div className="bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div className="bg-white/90 backdrop-blur-md p-8 rounded-3xl border border-slate-200/60 shadow-lg shadow-slate-200/20 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <div className="flex justify-between items-start mb-6">
                   <div className="p-3 bg-blue-50 rounded-xl text-blue-600 group-hover:scale-110 transition-transform">
@@ -326,7 +329,7 @@ function App() {
             </div>
 
             {/* Project 2: Course Seller App */}
-            <div className="bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div className="bg-white/90 backdrop-blur-md p-8 rounded-3xl border border-slate-200/60 shadow-lg shadow-slate-200/20 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <div className="flex justify-between items-start mb-6">
                   <div className="p-3 bg-blue-50 rounded-xl text-blue-600 group-hover:scale-110 transition-transform">
@@ -391,7 +394,7 @@ function App() {
             </div>
 
             {/* Project 3: RVM Prototype */}
-            <div className="bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div className="bg-white/90 backdrop-blur-md p-8 rounded-3xl border border-slate-200/60 shadow-lg shadow-slate-200/20 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <div className="flex justify-between items-start mb-6">
                   <div className="p-3 bg-blue-50 rounded-xl text-blue-600 group-hover:scale-110 transition-transform">
@@ -436,7 +439,7 @@ function App() {
             </div>
 
             {/* Project 4: Kinematics Calculator */}
-            <div className="bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div className="bg-white/90 backdrop-blur-md p-8 rounded-3xl border border-slate-200/60 shadow-lg shadow-slate-200/20 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <div className="flex justify-between items-start mb-6">
                   <div className="p-3 bg-blue-50 rounded-xl text-blue-600 group-hover:scale-110 transition-transform">
@@ -481,7 +484,7 @@ function App() {
             </div>
 
             {/* Project 5: Sentiment Analysis */}
-            <div className="bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div className="bg-white/90 backdrop-blur-md p-8 rounded-3xl border border-slate-200/60 shadow-lg shadow-slate-200/20 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <div className="flex justify-between items-start mb-6">
                   <div className="p-3 bg-blue-50 rounded-xl text-blue-600 group-hover:scale-110 transition-transform">
@@ -529,11 +532,8 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section
-        id="contact"
-        className="py-28 bg-white/50 backdrop-blur-sm border-t border-slate-200/50"
-      >
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section id="contact" className="py-28 relative">
+        <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 tracking-tight">
             Let's Connect
           </h2>
@@ -545,7 +545,7 @@ function App() {
           <div className="mb-12">
             <a
               href="mailto:adarshvijayvargiya8@gmail.com?subject=Inquiry%20from%20Portfolio"
-              className="inline-flex items-center gap-2 bg-white text-slate-800 border border-slate-200 hover:border-slate-900 hover:text-slate-900 font-bold px-8 py-4 rounded-full transition-all shadow-sm hover:shadow-md"
+              className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-md text-slate-800 border border-slate-200 hover:border-slate-900 hover:text-slate-900 font-bold px-8 py-4 rounded-full transition-all shadow-sm hover:shadow-md"
             >
               <svg
                 className="w-5 h-5 text-blue-600"
@@ -574,7 +574,7 @@ function App() {
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
-            className="max-w-xl mx-auto text-left space-y-6 bg-white p-8 md:p-10 rounded-3xl border border-slate-200/60 shadow-xl shadow-slate-200/20"
+            className="max-w-xl mx-auto text-left space-y-6 bg-white/90 backdrop-blur-md p-8 md:p-10 rounded-3xl border border-slate-200/60 shadow-xl shadow-slate-200/20"
           >
             {/* Embedded Web3Forms Token */}
             <input
@@ -596,7 +596,7 @@ function App() {
                   name="name"
                   id="name"
                   required
-                  className="w-full px-4 py-3.5 text-sm rounded-xl bg-slate-50/50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 outline-none transition-all text-slate-900 placeholder:text-slate-400"
+                  className="w-full px-4 py-3.5 text-sm rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 outline-none transition-all text-slate-900 placeholder:text-slate-400"
                   placeholder="John Doe"
                 />
               </div>
@@ -612,7 +612,7 @@ function App() {
                   name="email"
                   id="email"
                   required
-                  className="w-full px-4 py-3.5 text-sm rounded-xl bg-slate-50/50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 outline-none transition-all text-slate-900 placeholder:text-slate-400"
+                  className="w-full px-4 py-3.5 text-sm rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 outline-none transition-all text-slate-900 placeholder:text-slate-400"
                   placeholder="john@example.com"
                 />
               </div>
@@ -630,7 +630,7 @@ function App() {
                 id="message"
                 rows="5"
                 required
-                className="w-full px-4 py-3.5 text-sm rounded-xl bg-slate-50/50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 outline-none transition-all resize-none text-slate-900 placeholder:text-slate-400"
+                className="w-full px-4 py-3.5 text-sm rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-50 outline-none transition-all resize-none text-slate-900 placeholder:text-slate-400"
                 placeholder="Describe the scope or inquiry details..."
               ></textarea>
             </div>
@@ -646,7 +646,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200/60 py-12 text-center">
+      <footer className="bg-white/90 backdrop-blur-md border-t border-slate-200/60 py-12 text-center relative z-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
           <p className="font-semibold text-slate-500">
             &copy; {new Date().getFullYear()} Adarsh Kumar Vijayvargiya.
