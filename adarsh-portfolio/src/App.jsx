@@ -53,7 +53,7 @@ function App() {
       <section className="relative pt-48 pb-28 px-6 max-w-5xl mx-auto flex flex-col items-center text-center">
         <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 bg-white border border-slate-200 text-slate-700 font-bold text-xs tracking-wide uppercase rounded-full shadow-sm">
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-          8.70 CGPA • IIT (BHU) Varanasi
+          8.51 CGPA • IIT (BHU) Varanasi
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 tracking-tight text-slate-900 max-w-4xl leading-[1.1]">
@@ -235,7 +235,7 @@ function App() {
                     <span className="font-bold text-blue-600">Adarsh1805</span>
                     <br />
                     <span className="text-sm text-slate-500">
-                      Max Rating: 1436
+                      Max Rating: 1540
                     </span>
                   </div>
                 </li>
