@@ -21,7 +21,7 @@ function App() {
               &lt;/&gt;
             </span>
             <div className="font-black text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600">
-              Adarsh<span className="text-blue-600">.</span>
+              Adarsh Kumar Vijayvargiya<span className="text-blue-600">.</span>
             </div>
           </div>
 
