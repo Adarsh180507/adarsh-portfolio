@@ -260,7 +260,7 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1: AI Video Editor */}
+            {/* Project 1: AI Video Editor SaaS */}
             <div className="bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <div className="flex justify-between items-start mb-6">
@@ -300,23 +300,27 @@ function App() {
                   </a>
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
-                  AI Video Editing Tool
+                  AI-Powered Video Editor
                 </h3>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  An intelligent desktop application designed to automate
-                  micro-video editing configurations and asset processing using
-                  deep learning frameworks.
+                  Engineered an autonomous video editing platform using the MERN
+                  stack, integrating Gemini AI and Cloudinary. Designed an
+                  asynchronous task queue with BullMQ and Redis to manage
+                  high-latency rendering, ensuring a non-blocking user
+                  interface. Features secure JWT authentication, a credit-based
+                  paywall, and optimized cloud media pipelines to minimize
+                  server overhead.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-5 border-t border-slate-100">
                 <span className="bg-slate-100 text-slate-700 text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide">
-                  Python
+                  MERN
                 </span>
                 <span className="bg-slate-100 text-slate-700 text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide">
-                  OpenCV
+                  Redis & BullMQ
                 </span>
                 <span className="bg-slate-100 text-slate-700 text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide">
-                  AI Pipelines
+                  Cloudinary
                 </span>
               </div>
             </div>
@@ -364,9 +368,13 @@ function App() {
                   Course Subscription API
                 </h3>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  A comprehensive REST API application featuring secure user
-                  routing, authentication structures, transaction mock-ups, and
-                  programmatic access control.
+                  Developed a robust, highly scalable REST API backend
+                  architecture utilizing Node.js, Express, and MongoDB.
+                  Implemented secure role-based access control, JWT
+                  authentication, and dynamic educational content delivery
+                  systems. Designed optimized database schemas to efficiently
+                  handle user subscriptions, progress tracking, and transaction
+                  mock-ups.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-5 border-t border-slate-100">
@@ -406,9 +414,12 @@ function App() {
                   Sustainable RVM Build
                 </h3>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  A structural Reverse Vending Machine setup integrating an
-                  Arduino Uno unit, infrared sensors, a functional plastic
-                  passage pipe, and a dual-servo actuation loop.
+                  Engineered a functional Reverse Vending Machine prototype
+                  bridging hardware and software logic. Integrated an Arduino
+                  Uno with infrared sensors to detect deposits through a custom
+                  plastic pipe passage, housed in a cardboard structural body.
+                  Programmed a responsive dual-servo actuation loop to reliably
+                  dispense toffee rewards upon successful recycling actions.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-5 border-t border-slate-100">
@@ -419,7 +430,7 @@ function App() {
                   C++ Embedded
                 </span>
                 <span className="bg-slate-100 text-slate-700 text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide">
-                  Hardware
+                  Hardware Architecture
                 </span>
               </div>
             </div>
@@ -448,9 +459,12 @@ function App() {
                   Kinematics Calculator
                 </h3>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  Analytical system running mathematical modeling of
-                  slider-crank configurations and custom mechanisms via
-                  programmatic Streamlit matrices.
+                  Built an analytical computational engine to perform complex
+                  velocity and acceleration analysis for mechanical systems.
+                  Translated rigid body dynamics into programmatic matrices via
+                  Python, enabling rapid, interactive modeling of slider-crank
+                  configurations and four-bar linkages directly within a custom
+                  Streamlit web interface.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-5 border-t border-slate-100">
@@ -459,6 +473,9 @@ function App() {
                 </span>
                 <span className="bg-slate-100 text-slate-700 text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide">
                   Streamlit
+                </span>
+                <span className="bg-slate-100 text-slate-700 text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide">
+                  Matrix Computation
                 </span>
               </div>
             </div>
@@ -487,9 +504,12 @@ function App() {
                   YT Sentiment Analysis
                 </h3>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  Data indexing engine engineered to track community engagement
-                  metrics and text distribution scores on video resource
-                  targets.
+                  Designed and deployed a data extraction and natural language
+                  processing pipeline to evaluate community engagement on target
+                  video resources. Utilized Python to interface with APIs,
+                  efficiently scraping large volumes of comment data, and
+                  applied NLP algorithms to generate quantitative text
+                  distribution scores and overall audience sentiment metrics.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-5 border-t border-slate-100">
@@ -498,6 +518,9 @@ function App() {
                 </span>
                 <span className="bg-slate-100 text-slate-700 text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide">
                   NLP
+                </span>
+                <span className="bg-slate-100 text-slate-700 text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide">
+                  Data Extraction
                 </span>
               </div>
             </div>
